@@ -1,24 +1,24 @@
 class Merl < Formula
   desc "Read-only code navigator for the terminal"
   homepage "https://github.com/Maksim-Burtsev/merl"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.1.1/merl-aarch64-apple-darwin.tar.gz"
-      sha256 "0ba4cf2f954ecdc4e6ca7aea21ea462ab54d019f7176dc522de716eb6ef55fe2"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.2.0/merl-aarch64-apple-darwin.tar.gz"
+      sha256 "9ef4acc2c330e0be9f2dd25908831430ecccda7d69125a09f7f0719a6cdd1a7c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.1.1/merl-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a1f23f9df040898ef862630cfc11447d46aeee0e3109f3e2d7ebbb212bba46f5"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.2.0/merl-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2a713b93b40ceda8b0393a0deaf1fab7284e175bf03577c796fba3c8a793ec9d"
     end
     on_arm do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.1.1/merl-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6363d753c4d2699711996cbd5649b2cc137075968bdc4b9e5a4cf6a9fb026cb2"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.2.0/merl-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "675ae731e756483599ba3894ec5cd785f81f69c7ab0f09f0603f988bf30c0589"
     end
   end
 
@@ -27,6 +27,6 @@ class Merl < Formula
   end
 
   test do
-    assert_match "merl 0.1.1", shell_output("#{bin}/merl --version")
+    assert_match "merl 0.2.0", shell_output("#{bin}/merl --version")
   end
 end
