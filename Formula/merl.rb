@@ -1,5 +1,5 @@
 class Merl < Formula
-  desc "Keyboard-only code navigator for the terminal"
+  desc "One editor for when agents write the code: read, review, fix a line"
   homepage "https://github.com/Maksim-Burtsev/merl"
   version "0.7.0"
   license "MIT"
