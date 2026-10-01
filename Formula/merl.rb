@@ -1,24 +1,28 @@
 class Merl < Formula
   desc "One editor for when agents write the code: read, review, fix a line"
   homepage "https://github.com/Maksim-Burtsev/merl"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.7.0/merl-aarch64-apple-darwin.tar.gz"
-      sha256 "ead3e46bfb9097ec7eaff34a6d5192af17b2a1d048857235a242c5039ce6586a"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.0/merl-aarch64-apple-darwin.tar.gz"
+      sha256 "841bd7ad16557be803a79e79336011d328b17fc3edd6cecc07b909a4729f7729"
+    end
+    on_intel do
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.0/merl-x86_64-apple-darwin.tar.gz"
+      sha256 "9a4e85bda45318a9622354a87bd64eee6ff02add1481347148838d939ebd5ac0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.7.0/merl-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d2f305961b58da946428b4fcca97875aad35c5cd2c1c5537a93e39c30b7187d3"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.0/merl-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "748b9d2eb8f266371a22b750b52c4bcfef7ef25a323f615485b2544bcbf67c5d"
     end
     on_arm do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.7.0/merl-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "22863e496d3ea2f34b9332eb11d2313cc3db67559e24f50dd34885607e61ca67"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.0/merl-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1fafa921b1a4e742af2d5de8e6c2dc95d36a9b9f8ac3ba1c78fef55b17d5ecf2"
     end
   end
 
@@ -27,6 +31,6 @@ class Merl < Formula
   end
 
   test do
-    assert_match "merl 0.7.0", shell_output("#{bin}/merl --version")
+    assert_match "merl 0.8.0", shell_output("#{bin}/merl --version")
   end
 end
