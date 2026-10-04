@@ -1,28 +1,28 @@
 class Merl < Formula
   desc "One editor for when agents write the code: read, review, fix a line"
   homepage "https://github.com/Maksim-Burtsev/merl"
-  version "0.8.1"
+  version "0.8.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.1/merl-aarch64-apple-darwin.tar.gz"
-      sha256 "d74ab9711beb487cd1764aef4f7601b6e7559aa0741b45bc25ab9538984e72f5"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.2/merl-aarch64-apple-darwin.tar.gz"
+      sha256 "c0eb8226442d21ca13e685a274a97a0337838bc1bdb0b06594d7c283874a55de"
     end
     on_intel do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.1/merl-x86_64-apple-darwin.tar.gz"
-      sha256 "96d67d44704c1cb5f16ce8ea21c2777ff5af79076f576044bf3feef41eb2a076"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.2/merl-x86_64-apple-darwin.tar.gz"
+      sha256 "62356b9f7e8b06b05909da6dc1b33e52d977c026d3a7dc2e295f2a6a651f50d6"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.1/merl-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "bd392e38044e221335dc40e79377b568e748d05da3d992fc0ac4e7598e1f6ebb"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.2/merl-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e81f6bf3ac64dbb076e9a0c6925fcbe342416fa967251f9de1dcd48e158272bf"
     end
     on_arm do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.1/merl-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3650f3da01f956f3264dee9ef734f929df870c3bb5456bdaad3365f44a51b165"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.2/merl-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "60c923e2ff88b0c6351b718dd5dd1d0b4e083a5865f3bc07085bf0641a994301"
     end
   end
 
@@ -31,6 +31,6 @@ class Merl < Formula
   end
 
   test do
-    assert_match "merl 0.8.1", shell_output("#{bin}/merl --version")
+    assert_match "merl 0.8.2", shell_output("#{bin}/merl --version")
   end
 end
