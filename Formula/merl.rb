@@ -1,5 +1,5 @@
 class Merl < Formula
-  desc "One editor for when agents write the code: read, review, fix a line"
+  desc "Terminal code navigator: read a project, review a branch, fix a line"
   homepage "https://github.com/Maksim-Burtsev/merl"
   version "0.8.2"
   license "MIT"
