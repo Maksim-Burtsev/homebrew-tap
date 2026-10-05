@@ -1,5 +1,5 @@
 class Merl < Formula
-  desc "Terminal code navigator: read a project, review a branch, fix a line"
+  desc "Keyboard-only code navigator for the terminal"
   homepage "https://github.com/Maksim-Burtsev/merl"
   version "0.8.2"
   license "MIT"
