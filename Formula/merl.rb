@@ -1,28 +1,28 @@
 class Merl < Formula
   desc "Keyboard-only code navigator for the terminal"
   homepage "https://github.com/Maksim-Burtsev/merl"
-  version "0.8.2"
+  version "0.8.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.2/merl-aarch64-apple-darwin.tar.gz"
-      sha256 "c0eb8226442d21ca13e685a274a97a0337838bc1bdb0b06594d7c283874a55de"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.3/merl-aarch64-apple-darwin.tar.gz"
+      sha256 "e6a156489ed8bfcce97bc64821b8fe2cf2663643eab8fba49b83e7cf2a731afc"
     end
     on_intel do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.2/merl-x86_64-apple-darwin.tar.gz"
-      sha256 "62356b9f7e8b06b05909da6dc1b33e52d977c026d3a7dc2e295f2a6a651f50d6"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.3/merl-x86_64-apple-darwin.tar.gz"
+      sha256 "bf4e37c723536555a86550147e3eae1a4e7143191fcab4443eac45f201e1f4fe"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.2/merl-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e81f6bf3ac64dbb076e9a0c6925fcbe342416fa967251f9de1dcd48e158272bf"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.3/merl-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4fa85501bd814d815815e021b1b790bc2d784cc6e744e846db735aeb7633bc25"
     end
     on_arm do
-      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.2/merl-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "60c923e2ff88b0c6351b718dd5dd1d0b4e083a5865f3bc07085bf0641a994301"
+      url "https://github.com/Maksim-Burtsev/merl/releases/download/v0.8.3/merl-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a45873ed3b67a720819b79964bfe5291288217e30ab6d3997616f3d64f698362"
     end
   end
 
@@ -31,6 +31,6 @@ class Merl < Formula
   end
 
   test do
-    assert_match "merl 0.8.2", shell_output("#{bin}/merl --version")
+    assert_match "merl 0.8.3", shell_output("#{bin}/merl --version")
   end
 end
